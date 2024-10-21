@@ -4,78 +4,93 @@
     <title>Hotel Management - Booking</title>
 </head>
 <body>
-        
-        <hr />
+    <center>
         <nav>
-            <a href="index.html" style="font-size: 30px;">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="room.html" style="font-size: 30px;">Rooms</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="booking.html" style="font-size: 30px;">Bookings</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="Events.html" style="font-size: 30px;">Events</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="dining.html" style="font-size: 30px;">Dinning</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="amenities.html" style="font-size: 30px;">Amenities</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="about.html" style="font-size: 30px;">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="contact.html" style="font-size: 30px;">Contact Us</a> &nbsp;&nbsp;&nbsp;&nbsp;
-        
+            <table align="center">
+                <tr align="center">
+                    <td></td>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="index.html" style="font-size: 30px;">Home</a> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="room.html" style="font-size: 30px;">Rooms</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="booking.html" style="font-size: 30px;">Bookings</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="events.html" style="font-size: 30px;">Events</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="dining.html" style="font-size: 30px;">Dining</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="amenities.html" style="font-size: 30px;">Amenities</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="about.html" style="font-size: 30px;">About Us</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="contact.html" style="font-size: 30px;">Contact Us</a>
+                    </td>
+                </tr>
+            </table>
         </nav>
         <hr />
-            
-             <h1>BOOKING</h1>    
-
-
-            <h2>Make a Reservation</h2>
-            <form action="/submit-booking" method="post">
-                <div>
-                    <label for="name">Name:</label>
-                    <br>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <br>
-                <div>
-                    <label for="email">Email:</label>
-                    <br>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <br>
-                <div>
-                    <label for="phone">Phone Number:</label>
-                    <br>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <br>
-                <div>
-                    <label for="checkin">Check-in Date:</label>
-                    <br>
-                    <input type="date" id="checkin" name="checkin" required>
-                </div>
-                <br>
-                <div>
-                    <label for="checkout">Check-out Date:</label>
-                    <br>
-                    <input type="date" id="checkout" name="checkout" required>
-                </div>
-                <br>
-                <div>
-                    <label for="room-type">Room Type:</label>
-                    <br>
-                    <select id="room-type" name="room-type" required>
-                        <option value="standard">Standard Room</option>
-                        <option value="deluxe">Deluxe Room</option>
-                        <option value="suite">Suite</option>
-                    </select>
-                </div>
-                <br>
-                <div>
-                    <label for="comments">Additional Comments:</label>
-                    <br>
-                    <textarea id="comments" name="comments"></textarea>
-                </div>
-                <br>
-                <div>
-                    <button type="submit">Book Now</button>
-                </div>
-            </form>
-        
-    
+        <table border="1" width=25%" align="center">
+            <tr align="center">
+                <td align="center">
+                    <h1>BOOKING</h1>
+                    <h2>Make a Reservation</h2>
+                    <form action="/submit-booking" method="post">
+                        <div>
+                            <label for="name">Name:</label>
+                            <br>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="email">Email:</label>
+                            <br>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="phone">Phone Number:</label>
+                            <br>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="checkin">Check-in Date:</label>
+                            <br>
+                            <input type="date" id="checkin" name="checkin" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="checkout">Check-out Date:</label>
+                            <br>
+                            <input type="date" id="checkout" name="checkout" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="room-type">Room Type:</label>
+                            <br>
+                            <select id="room-type" name="room-type" required>
+                                <option value="standard">Standard Room</option>
+                                <option value="deluxe">Deluxe Room</option>
+                                <option value="suite">Suite</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="comments">Additional Comments:</label>
+                            <br>
+                            <textarea id="comments" name="comments"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <button type="submit">Book Now</button>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        </table>        
+    </center>
     <footer>
         <p>&copy; 2024 Hotel Management</p>
     </footer>
